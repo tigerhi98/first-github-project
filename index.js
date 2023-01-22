@@ -9,6 +9,7 @@ function setUserName() {
       setUserName()
     } else {
       userNameElem.textContent = userName
+      localStorage.setItem('name', userName)
     }
   }
 }
