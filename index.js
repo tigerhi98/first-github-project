@@ -1,13 +1,7 @@
 const userNameElem = document.querySelector('#user-name')
 const changeNameBtn = document.querySelector('#change-name')
 
-let userName = localStorage.getItem('name')
-if(userName == undefined) {
-  setUserName()
-} else {
-  userNameElem.textContent = userName
-}
-
+initializeUserName()
 changeNameBtn.onClick = setUserName
 
 function setUserName() {
@@ -17,5 +11,14 @@ function setUserName() {
   } else {
     userNameElem.textContent = userName
     localStorage.setItem('name', userName)
+  }
+}
+
+function initializeUserName() {
+  let userName = localStorage.getItem('name')
+  if(userName == undefined) {
+    setUserName()
+  } else {
+    userNameElem.textContent = userName
   }
 }
