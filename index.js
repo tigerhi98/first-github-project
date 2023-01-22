@@ -3,7 +3,7 @@ setUserName()
 
 function setUserName() {
   let userName = localStorage.getItem('name')
-  if(userName === undefined) {
+  if(userName == undefined) {
     userName = prompt('What is your name?')
     if(!name) {
       setUserName()
