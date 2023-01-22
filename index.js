@@ -2,7 +2,7 @@ const userNameElem = document.querySelector('#user-name')
 const changeNameBtn = document.querySelector('#change-name')
 
 initializeUserName()
-changeNameBtn.onClick = setUserName
+changeNameBtn.onclick = setUserName
 
 function setUserName() {
   userName = prompt('What is your name?')
