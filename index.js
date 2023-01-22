@@ -1,4 +1,4 @@
-const userNameElem = document.querySelector('user-name')
+const userNameElem = document.querySelector('#user-name')
 setUserName()
 
 function setUserName() {
