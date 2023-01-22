@@ -4,6 +4,8 @@ const changeNameBtn = document.querySelector('#change-name')
 let userName = localStorage.getItem('name')
 if(userName == undefined) {
   setUserName()
+} else {
+  userNameElem.textContent = userName
 }
 
 changeNameBtn.onClick = setUserName
